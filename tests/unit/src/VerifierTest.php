@@ -205,9 +205,9 @@ class VerifierTest extends Unit
         $this->setupRuleProviderMock();
         $this->setupHandlerResolverMock($handler);
 
-        $component = new TestControl(null, 'component');
+        $component = new TestControl();
         $parent = Phony::partialMock(Presenter::class)->get();
-        $component->setParent($parent);
+        $component->setParent($parent, 'component');
 
         self::assertTrue($this->verifier->isLinkVerified($request, $component));
     }
