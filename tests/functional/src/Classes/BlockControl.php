@@ -20,6 +20,7 @@ class BlockControl extends Control
     /**
      * @var bool
      * @Enabled( "$privilege" )
+     * @persistent
      */
     public $privilege;
 
