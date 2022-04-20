@@ -212,12 +212,11 @@ class VerifierTest extends Unit
         self::assertTrue($this->verifier->isLinkVerified($request, $component));
     }
 
-    /**
-     * @expectedException \Arachne\Verifier\Exception\InvalidArgumentException
-     * @expectedExceptionMessage Wrong signal receiver, expected 'component' component but 'test-component' was given.
-     */
     public function testWrongSignalReceiver(): void
     {
+        $this->expectException(\Arachne\Verifier\Exception\InvalidArgumentException::class);
+        $this->expectExceptionMessage("Wrong signal receiver, expected 'component' component but 'test-component' was given.");
+
         $request = $this->createRequestMock(
             [
                 Presenter::ACTION_KEY => 'action',
