@@ -22,18 +22,19 @@
         "arachne/service-collections": "dev-master",
         "nette/application": "^3.1",
         "nette/di": "^3.0",
-        "nette/utils": "^3.2"
+        "nette/utils": "^3.2",
+        "doctrine/annotations": "^1.3.0",
+        "latte/latte": "^2.9.0",
+        "nettrine/annotations": "^0.7.0"
     },
     "require-dev": {
         "contributte/codeception": "^1.3",
         "codeception/codeception": "^4.1",
-        "doctrine/annotations": "^1.3.0",
         "eloquent/phony": "^5.0",
         "eloquent/phony-phpunit": "^7.1",
         "friendsofphp/php-cs-fixer": "^2.8.0",
-        "kdyby/annotations": "^2.3.0",
-        "kdyby/doctrine-cache": "^2.6.1",
-        "latte/latte": "^2.9.0"
+        "dg/bypass-finals": "^1.3.0",
+        "nette/caching": "^3.0.2"
     },
     "autoload": {
         "psr-4": {
