@@ -34,7 +34,8 @@
         "eloquent/phony-phpunit": "^7.1",
         "friendsofphp/php-cs-fixer": "^2.8.0",
         "dg/bypass-finals": "^1.3.0",
-        "nette/caching": "^3.0.2"
+        "nette/caching": "^3.0.2",
+        "nettrine/cache": "^0.3.0"
     },
     "autoload": {
         "psr-4": {
