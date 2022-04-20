@@ -14,11 +14,11 @@ use Arachne\Verifier\Rules\AllRuleHandler;
 use Arachne\Verifier\Rules\Either;
 use Arachne\Verifier\Rules\EitherRuleHandler;
 use Arachne\Verifier\Verifier;
-use Kdyby\Annotations\DI\AnnotationsExtension;
 use Nette\Application\UI\Presenter;
 use Nette\Bridges\ApplicationLatte\ILatteFactory;
 use Nette\DI\CompilerExtension;
 use Nette\Utils\AssertionException;
+use Nettrine\Annotations\DI\AnnotationsExtension;
 
 /**
  * @author Jáchym Toušek <enumag@gmail.com>
