@@ -11,12 +11,15 @@
             "email": "enumag@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/josefsabl/ServiceCollections.git"
+        }
+    ],
     "require": {
         "php": "^7.1.0",
-        "arachne/service-collections": "^0.2.0",
-        "nette/application": "^2.4.11",
-        "nette/di": "^2.4.10",
-        "nette/utils": "^2.4.0"
+        "arachne/service-collections": "dev-nette-3.0"
     },
     "require-dev": {
         "codeception/codeception": "^2.3.2",

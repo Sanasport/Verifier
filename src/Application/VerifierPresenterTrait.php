@@ -68,7 +68,7 @@ trait VerifierPresenterTrait
      *
      * @internal
      */
-    public function createRequest($component, $destination, array $parameters, $mode)
+    public function delegateCreateRequest($component, $destination, array $parameters, $mode)
     {
         return parent::createRequest($component, $destination, $parameters, $mode);
     }

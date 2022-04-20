@@ -41,7 +41,6 @@ class VerifierMacros extends MacroSet
                 if ((bool) $word) {
                     $link = '$this->global->uiControl->link('.$writer->formatWord($word).', %node.array?)';
                 } else {
-                    $node->modifiers .= '|safeurl';
                     $link = '$_verifiedLink';
                 }
 

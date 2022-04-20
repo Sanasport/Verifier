@@ -98,6 +98,7 @@ class VerifierExtension extends CompilerExtension
         $latte = $builder->getByType(ILatteFactory::class);
         if ($builder->hasDefinition($latte)) {
             $builder->getDefinition($latte)
+                ->getResultDefinition()
                 ->addSetup(
                     '?->onCompile[] = function ($engine) { \Arachne\Verifier\Latte\VerifierMacros::install($engine->getCompiler()); }',
                     ['@self']
